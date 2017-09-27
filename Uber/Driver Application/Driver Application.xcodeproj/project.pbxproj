@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D752CC6A535D4D14F9FEE89 /* Pods_Driver_Application.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 679416CA7E09070B6858B8F1 /* Pods_Driver_Application.framework */; };
+		8326198F1F3BFD9000C04A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326198E1F3BFD9000C04A14 /* AppDelegate.swift */; };
+		832619911F3BFD9000C04A14 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832619901F3BFD9000C04A14 /* SignInVC.swift */; };
+		832619941F3BFD9000C04A14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832619921F3BFD9000C04A14 /* Main.storyboard */; };
+		832619961F3BFD9000C04A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832619951F3BFD9000C04A14 /* Assets.xcassets */; };
+		832619991F3BFD9000C04A14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832619971F3BFD9000C04A14 /* LaunchScreen.storyboard */; };
+		832619A41F3BFD9100C04A14 /* Driver_ApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832619A31F3BFD9100C04A14 /* Driver_ApplicationTests.swift */; };
+		832619AF1F3BFF2A00C04A14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 832619AE1F3BFF2A00C04A14 /* GoogleService-Info.plist */; };
+		832619B71F3C160B00C04A14 /* DriverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832619B61F3C160B00C04A14 /* DriverVC.swift */; };
+		832619B91F3C172D00C04A14 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832619B81F3C172D00C04A14 /* Constants.swift */; };
+		832619BB1F3C174B00C04A14 /* DBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832619BA1F3C174B00C04A14 /* DBProvider.swift */; };
+		832619BD1F3C176800C04A14 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832619BC1F3C176800C04A14 /* AuthProvider.swift */; };
+		832619C01F3C230000C04A14 /* UberHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832619BF1F3C230000C04A14 /* UberHandler.swift */; };
+		B97D8AE804E076EF88ED04CB /* Pods_Driver_ApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150CA1B5294898F8649EB713 /* Pods_Driver_ApplicationTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		832619A01F3BFD9100C04A14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 832619831F3BFD9000C04A14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8326198A1F3BFD9000C04A14;
+			remoteInfo = "Driver Application";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FD027DCEA63097B10BCAFA5 /* Pods-Driver Application.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver Application.release.xcconfig"; path = "Pods/Target Support Files/Pods-Driver Application/Pods-Driver Application.release.xcconfig"; sourceTree = "<group>"; };
+		150CA1B5294898F8649EB713 /* Pods_Driver_ApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Driver_ApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		391E2107CBE41BA7E27A3B83 /* Pods-Driver ApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver ApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Driver ApplicationTests/Pods-Driver ApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B9EEA4A91E4A1C00E295E41 /* Pods-Driver Application.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver Application.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Driver Application/Pods-Driver Application.debug.xcconfig"; sourceTree = "<group>"; };
+		679416CA7E09070B6858B8F1 /* Pods_Driver_Application.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Driver_Application.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8326198B1F3BFD9000C04A14 /* Driver Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Driver Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8326198E1F3BFD9000C04A14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		832619901F3BFD9000C04A14 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		832619931F3BFD9000C04A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		832619951F3BFD9000C04A14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		832619981F3BFD9000C04A14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8326199A1F3BFD9100C04A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8326199F1F3BFD9100C04A14 /* Driver ApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Driver ApplicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		832619A31F3BFD9100C04A14 /* Driver_ApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver_ApplicationTests.swift; sourceTree = "<group>"; };
+		832619A51F3BFD9100C04A14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832619AE1F3BFF2A00C04A14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		832619B61F3C160B00C04A14 /* DriverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverVC.swift; sourceTree = "<group>"; };
+		832619B81F3C172D00C04A14 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		832619BA1F3C174B00C04A14 /* DBProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBProvider.swift; sourceTree = "<group>"; };
+		832619BC1F3C176800C04A14 /* AuthProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		832619BF1F3C230000C04A14 /* UberHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UberHandler.swift; sourceTree = "<group>"; };
+		B0D4FBE506799241C8505694 /* Pods-Driver ApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver ApplicationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Driver ApplicationTests/Pods-Driver ApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		832619881F3BFD9000C04A14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D752CC6A535D4D14F9FEE89 /* Pods_Driver_Application.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8326199C1F3BFD9100C04A14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97D8AE804E076EF88ED04CB /* Pods_Driver_ApplicationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CE36EF8FD0AD3095DF66385 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				679416CA7E09070B6858B8F1 /* Pods_Driver_Application.framework */,
+				150CA1B5294898F8649EB713 /* Pods_Driver_ApplicationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832619821F3BFD9000C04A14 = {
+			isa = PBXGroup;
+			children = (
+				8326198D1F3BFD9000C04A14 /* Driver Application */,
+				832619B01F3C13BA00C04A14 /* Delegates */,
+				832619B21F3C13EA00C04A14 /* Extra */,
+				832619A21F3BFD9100C04A14 /* Driver ApplicationTests */,
+				8326198C1F3BFD9000C04A14 /* Products */,
+				CD788F29A6FB1F4627593F6E /* Pods */,
+				4CE36EF8FD0AD3095DF66385 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8326198C1F3BFD9000C04A14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8326198B1F3BFD9000C04A14 /* Driver Application.app */,
+				8326199F1F3BFD9100C04A14 /* Driver ApplicationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8326198D1F3BFD9000C04A14 /* Driver Application */ = {
+			isa = PBXGroup;
+			children = (
+				832619BE1F3C1AA200C04A14 /* Storyboard */,
+				832619B11F3C13D000C04A14 /* Plugins */,
+				832619B31F3C157100C04A14 /* View */,
+			);
+			path = "Driver Application";
+			sourceTree = "<group>";
+		};
+		832619A21F3BFD9100C04A14 /* Driver ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				832619A31F3BFD9100C04A14 /* Driver_ApplicationTests.swift */,
+				832619A51F3BFD9100C04A14 /* Info.plist */,
+			);
+			path = "Driver ApplicationTests";
+			sourceTree = "<group>";
+		};
+		832619B01F3C13BA00C04A14 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8326198E1F3BFD9000C04A14 /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			path = "Driver Application";
+			sourceTree = "<group>";
+		};
+		832619B11F3C13D000C04A14 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				832619B81F3C172D00C04A14 /* Constants.swift */,
+				832619BA1F3C174B00C04A14 /* DBProvider.swift */,
+				832619BC1F3C176800C04A14 /* AuthProvider.swift */,
+				832619BF1F3C230000C04A14 /* UberHandler.swift */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		832619B21F3C13EA00C04A14 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				832619951F3BFD9000C04A14 /* Assets.xcassets */,
+				832619971F3BFD9000C04A14 /* LaunchScreen.storyboard */,
+				832619AE1F3BFF2A00C04A14 /* GoogleService-Info.plist */,
+				8326199A1F3BFD9100C04A14 /* Info.plist */,
+			);
+			name = Extra;
+			path = "Driver Application";
+			sourceTree = "<group>";
+		};
+		832619B31F3C157100C04A14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				832619901F3BFD9000C04A14 /* SignInVC.swift */,
+				832619B61F3C160B00C04A14 /* DriverVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		832619BE1F3C1AA200C04A14 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				832619921F3BFD9000C04A14 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		CD788F29A6FB1F4627593F6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B9EEA4A91E4A1C00E295E41 /* Pods-Driver Application.debug.xcconfig */,
+				0FD027DCEA63097B10BCAFA5 /* Pods-Driver Application.release.xcconfig */,
+				391E2107CBE41BA7E27A3B83 /* Pods-Driver ApplicationTests.debug.xcconfig */,
+				B0D4FBE506799241C8505694 /* Pods-Driver ApplicationTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8326198A1F3BFD9000C04A14 /* Driver Application */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832619A81F3BFD9100C04A14 /* Build configuration list for PBXNativeTarget "Driver Application" */;
+			buildPhases = (
+				9455608487929CC78ECADB60 /* [CP] Check Pods Manifest.lock */,
+				832619871F3BFD9000C04A14 /* Sources */,
+				832619881F3BFD9000C04A14 /* Frameworks */,
+				832619891F3BFD9000C04A14 /* Resources */,
+				9830C95C48A04FF58032ECFF /* [CP] Embed Pods Frameworks */,
+				F8419A63BF55B47753555C96 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Driver Application";
+			productName = "Driver Application";
+			productReference = 8326198B1F3BFD9000C04A14 /* Driver Application.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8326199E1F3BFD9100C04A14 /* Driver ApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832619AB1F3BFD9100C04A14 /* Build configuration list for PBXNativeTarget "Driver ApplicationTests" */;
+			buildPhases = (
+				4DB804ACC8DDAD335E2AB908 /* [CP] Check Pods Manifest.lock */,
+				8326199B1F3BFD9100C04A14 /* Sources */,
+				8326199C1F3BFD9100C04A14 /* Frameworks */,
+				8326199D1F3BFD9100C04A14 /* Resources */,
+				7EF3D211B3BF857AE486303C /* [CP] Embed Pods Frameworks */,
+				DCF0FB1E7984F244D0C3BDBC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				832619A11F3BFD9100C04A14 /* PBXTargetDependency */,
+			);
+			name = "Driver ApplicationTests";
+			productName = "Driver ApplicationTests";
+			productReference = 8326199F1F3BFD9100C04A14 /* Driver ApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		832619831F3BFD9000C04A14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ram Yadav";
+				TargetAttributes = {
+					8326198A1F3BFD9000C04A14 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					8326199E1F3BFD9100C04A14 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8326198A1F3BFD9000C04A14;
+					};
+				};
+			};
+			buildConfigurationList = 832619861F3BFD9000C04A14 /* Build configuration list for PBXProject "Driver Application" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 832619821F3BFD9000C04A14;
+			productRefGroup = 8326198C1F3BFD9000C04A14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8326198A1F3BFD9000C04A14 /* Driver Application */,
+				8326199E1F3BFD9100C04A14 /* Driver ApplicationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		832619891F3BFD9000C04A14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832619991F3BFD9000C04A14 /* LaunchScreen.storyboard in Resources */,
+				832619AF1F3BFF2A00C04A14 /* GoogleService-Info.plist in Resources */,
+				832619961F3BFD9000C04A14 /* Assets.xcassets in Resources */,
+				832619941F3BFD9000C04A14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8326199D1F3BFD9100C04A14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DB804ACC8DDAD335E2AB908 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7EF3D211B3BF857AE486303C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Driver ApplicationTests/Pods-Driver ApplicationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9455608487929CC78ECADB60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9830C95C48A04FF58032ECFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Driver Application/Pods-Driver Application-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF0FB1E7984F244D0C3BDBC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Driver ApplicationTests/Pods-Driver ApplicationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8419A63BF55B47753555C96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Driver Application/Pods-Driver Application-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		832619871F3BFD9000C04A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832619BD1F3C176800C04A14 /* AuthProvider.swift in Sources */,
+				832619911F3BFD9000C04A14 /* SignInVC.swift in Sources */,
+				832619B71F3C160B00C04A14 /* DriverVC.swift in Sources */,
+				832619BB1F3C174B00C04A14 /* DBProvider.swift in Sources */,
+				832619C01F3C230000C04A14 /* UberHandler.swift in Sources */,
+				8326198F1F3BFD9000C04A14 /* AppDelegate.swift in Sources */,
+				832619B91F3C172D00C04A14 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8326199B1F3BFD9100C04A14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832619A41F3BFD9100C04A14 /* Driver_ApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		832619A11F3BFD9100C04A14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8326198A1F3BFD9000C04A14 /* Driver Application */;
+			targetProxy = 832619A01F3BFD9100C04A14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		832619921F3BFD9000C04A14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				832619931F3BFD9000C04A14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		832619971F3BFD9000C04A14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				832619981F3BFD9000C04A14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		832619A61F3BFD9100C04A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		832619A71F3BFD9100C04A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		832619A91F3BFD9100C04A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B9EEA4A91E4A1C00E295E41 /* Pods-Driver Application.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Driver Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramInc.Driver-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		832619AA1F3BFD9100C04A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FD027DCEA63097B10BCAFA5 /* Pods-Driver Application.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Driver Application/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramInc.Driver-Application";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		832619AC1F3BFD9100C04A14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 391E2107CBE41BA7E27A3B83 /* Pods-Driver ApplicationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Driver ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramInc.Driver-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Driver Application.app/Driver Application";
+			};
+			name = Debug;
+		};
+		832619AD1F3BFD9100C04A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D4FBE506799241C8505694 /* Pods-Driver ApplicationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Driver ApplicationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ramInc.Driver-ApplicationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Driver Application.app/Driver Application";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		832619861F3BFD9000C04A14 /* Build configuration list for PBXProject "Driver Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832619A61F3BFD9100C04A14 /* Debug */,
+				832619A71F3BFD9100C04A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832619A81F3BFD9100C04A14 /* Build configuration list for PBXNativeTarget "Driver Application" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832619A91F3BFD9100C04A14 /* Debug */,
+				832619AA1F3BFD9100C04A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832619AB1F3BFD9100C04A14 /* Build configuration list for PBXNativeTarget "Driver ApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832619AC1F3BFD9100C04A14 /* Debug */,
+				832619AD1F3BFD9100C04A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 832619831F3BFD9000C04A14 /* Project object */;
+}

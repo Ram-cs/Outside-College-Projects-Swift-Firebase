@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>768591597271-alho1hu5q1gjtmgs4mm75mgaklu9f656.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.768591597271-alho1hu5q1gjtmgs4mm75mgaklu9f656</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCDq3kM4d6Rzks2wQo1acMoIaHLg9Ue76Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>768591597271</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ramInc.Driver-Application</string>
+	<key>PROJECT_ID</key>
+	<string>uber-rider-app-f320a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>uber-rider-app-f320a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:768591597271:ios:0fd14c8903c36dd3</string>
+	<key>DATABASE_URL</key>
+	<string>https://uber-rider-app-f320a.firebaseio.com</string>
+</dict>
+</plist>

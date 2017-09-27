@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RateFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dt4-L1-IB4">
+                                <rect key="frame" x="16" y="89" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ali-VE-N6W">
+                                <rect key="frame" x="16" y="51" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qeg-0h-umv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="19"/>
+                                <color key="textColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peq-EC-lbx">
+                                <rect key="frame" x="20" y="127" width="80" height="29"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="arc-Ux-eUP"/>
+                                    <constraint firstAttribute="height" constant="29" id="hZR-7R-YVr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xRs-Qo-azJ"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="ZOU-YE-Tc1">
+                                <rect key="frame" x="91" y="188" width="192" height="145"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="naL-Zi-1BT"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tGv-VV-BWT" appends="YES" id="YBe-uJ-rJJ"/>
+                                </connections>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMv-IA-Tnl" customClass="RatingControl" customModule="RateFood" customModuleProvider="target">
+                                <rect key="frame" x="16" y="379" width="200" height="110"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xMv-IA-Tnl" firstAttribute="top" secondItem="ZOU-YE-Tc1" secondAttribute="bottom" constant="46" id="6Gt-Q8-EJO"/>
+                            <constraint firstItem="Ali-VE-N6W" firstAttribute="trailing" secondItem="Dt4-L1-IB4" secondAttribute="trailing" id="7JQ-1e-kkX"/>
+                            <constraint firstItem="Dt4-L1-IB4" firstAttribute="centerX" secondItem="ZOU-YE-Tc1" secondAttribute="centerX" id="FAF-kH-tGo"/>
+                            <constraint firstItem="Dt4-L1-IB4" firstAttribute="leading" secondItem="xMv-IA-Tnl" secondAttribute="leading" id="Foe-Jb-ODR"/>
+                            <constraint firstItem="Ali-VE-N6W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="I2g-vq-Uk4"/>
+                            <constraint firstItem="ZOU-YE-Tc1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="75" id="J4C-SR-CGX"/>
+                            <constraint firstAttribute="trailing" secondItem="xMv-IA-Tnl" secondAttribute="trailing" constant="159" id="MY5-fX-3Tw"/>
+                            <constraint firstItem="Ali-VE-N6W" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NCh-i7-g8l"/>
+                            <constraint firstItem="Ali-VE-N6W" firstAttribute="leading" secondItem="Dt4-L1-IB4" secondAttribute="leading" id="P8I-g5-Gbs"/>
+                            <constraint firstItem="ZOU-YE-Tc1" firstAttribute="top" secondItem="peq-EC-lbx" secondAttribute="bottom" constant="32" id="Rmo-Sx-ru9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xMv-IA-Tnl" secondAttribute="bottom" constant="178" id="VjR-7L-HXd"/>
+                            <constraint firstItem="peq-EC-lbx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="b7f-EX-gl8"/>
+                            <constraint firstItem="Dt4-L1-IB4" firstAttribute="top" secondItem="Ali-VE-N6W" secondAttribute="bottom" constant="8" symbolic="YES" id="pHL-s5-2dq"/>
+                            <constraint firstItem="peq-EC-lbx" firstAttribute="top" secondItem="Dt4-L1-IB4" secondAttribute="bottom" constant="8" symbolic="YES" id="sti-WI-7Ow"/>
+                            <constraint firstItem="Ali-VE-N6W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zTs-ne-z8n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ZOU-YE-Tc1" id="SXh-UV-ZLQ"/>
+                        <outlet property="label" destination="Ali-VE-N6W" id="Qrm-0T-f7f"/>
+                        <outlet property="textField" destination="Dt4-L1-IB4" id="m7v-1d-QQQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tGv-VV-BWT">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="XO0-C0-hKT"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-52" y="-132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="235" height="235"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_ForTesting {
+  umbrella header "Pods-ForTesting-umbrella.h"
+
+  export *
+  module * { export * }
+}

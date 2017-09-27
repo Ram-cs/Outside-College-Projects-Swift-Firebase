@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test View Controller-->
+        <scene sceneID="0rp-uP-IFG">
+            <objects>
+                <viewController id="iqy-ia-kDv" customClass="TestViewController" customModule="Rider_For_Uber_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OKC-4D-Pg9"/>
+                        <viewControllerLayoutGuide type="bottom" id="2VY-Zh-m5r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gkD-VT-jmd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xeT-hz-s2f">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="eUy-xY-NNc"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Pe-Vb-FY6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r2c-a5-HoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-497" y="-35"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="Rider_For_Uber_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Riders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jog-0Y-bLe">
+                                <rect key="frame" x="73" y="42" width="189" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SuL-R0-uyK">
+                                <rect key="frame" x="16" y="119" width="348" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="CqM-nQ-hIj">
+                                <rect key="frame" x="16" y="167" width="348" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLE-63-Z9b">
+                                <rect key="frame" x="50" y="214" width="113" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YWm-bZ-kTx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feD-TZ-IAh">
+                                <rect key="frame" x="204" y="214" width="113" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXu-Lu-lbg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="SuL-R0-uyK" id="fkl-yq-0Er"/>
+                        <outlet property="password" destination="CqM-nQ-hIj" id="aUs-gU-Lz2"/>
+                        <segue destination="9mc-aN-HNJ" kind="show" identifier="riderSegue" id="F6q-hQ-sVV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="-637"/>
+        </scene>
+        <!--RiderVC-->
+        <scene sceneID="3d2-Co-jZZ">
+            <objects>
+                <viewController id="OBf-Gh-776" customClass="RiderVC" customModule="Rider_For_Uber_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7q4-mb-PLj"/>
+                        <viewControllerLayoutGuide type="bottom" id="yQY-cK-m3W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tcF-0S-gYf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxW-ym-Tje">
+                                <rect key="frame" x="16" y="455" width="343" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="NBl-rc-QbF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KGh-xc-XbM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="373"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lq9-vF-twj">
+                                <rect key="frame" x="124" y="518" width="127" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="dbb-Gc-a9K"/>
+                                    <constraint firstAttribute="width" constant="127" id="l5F-Pv-nRt"/>
+                                </constraints>
+                                <state key="normal" title="Call Uber">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="callUber:" destination="OBf-Gh-776" eventType="touchUpInside" id="eQt-SA-YNE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BxW-ym-Tje" firstAttribute="centerX" secondItem="Lq9-vF-twj" secondAttribute="centerX" id="9O7-sR-gCS"/>
+                            <constraint firstItem="Lq9-vF-twj" firstAttribute="top" secondItem="BxW-ym-Tje" secondAttribute="bottom" constant="20" id="9cL-HG-73Q"/>
+                            <constraint firstItem="BxW-ym-Tje" firstAttribute="top" secondItem="KGh-xc-XbM" secondAttribute="bottom" constant="18" id="EBh-PZ-Vhd"/>
+                            <constraint firstItem="KGh-xc-XbM" firstAttribute="leading" secondItem="tcF-0S-gYf" secondAttribute="leading" id="Ecz-AX-kGk"/>
+                            <constraint firstItem="BxW-ym-Tje" firstAttribute="leading" secondItem="tcF-0S-gYf" secondAttribute="leadingMargin" id="bCM-LG-71b"/>
+                            <constraint firstAttribute="trailing" secondItem="KGh-xc-XbM" secondAttribute="trailing" id="d7b-ys-gTW"/>
+                            <constraint firstItem="KGh-xc-XbM" firstAttribute="top" secondItem="7q4-mb-PLj" secondAttribute="bottom" id="f2i-qY-sne"/>
+                            <constraint firstItem="KGh-xc-XbM" firstAttribute="centerX" secondItem="BxW-ym-Tje" secondAttribute="centerX" id="hr3-gq-jKM"/>
+                            <constraint firstItem="yQY-cK-m3W" firstAttribute="top" secondItem="Lq9-vF-twj" secondAttribute="bottom" constant="104" id="wZP-ZV-ttl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YK7-Y6-dbI">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="dYO-50-MW3">
+                            <connections>
+                                <action selector="logOut:" destination="OBf-Gh-776" id="AxN-vm-524"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="canCallUberButton" destination="Lq9-vF-twj" id="unN-BC-w67"/>
+                        <outlet property="labelText" destination="BxW-ym-Tje" id="sbD-s4-EaW"/>
+                        <outlet property="myMap" destination="KGh-xc-XbM" id="VZm-u2-4QQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NVD-DX-J6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2444" y="-623.83808095952031"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5LN-Zn-HMx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9mc-aN-HNJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H3k-d9-LpV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OBf-Gh-776" kind="relationship" relationship="rootViewController" id="Akj-JZ-5Lt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0s0-Qe-aSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="400"/>
+        </scene>
+    </scenes>
+</document>
